@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon" />
+    <title>👽 Caçando o Marciano 🔫</title>
+  </head>
+  <body>
+    <header>
+      <h1>👽 Caçando o Marciano 🔫</h1>
+    </header>
+    <main>
+      <section class="trees">
+        <div class="tree">
+          <img src="img/tree.png" alt="Árvore" id="tree1" />
+          <button id="btn1" onclick="shoot(1)">
+            <img src="img/target.png" alt="Atirar" />
+          </button>
+        </div>
+        <div class="tree">
+          <img src="img/tree.png" alt="Árvore" id="tree2" />
+          <button id="btn2" onclick="shoot(2)">
+            <img src="img/target.png" alt="Atirar" />
+          </button>
+        </div>
+        <div class="tree">
+          <img src="img/tree.png" alt="Árvore" id="tree3" />
+          <button id="btn3" onclick="shoot(3)">
+            <img src="img/target.png" alt="Atirar" />
+          </button>
+        </div>
+        <div class="tree">
+          <img src="img/tree.png" alt="Árvore" id="tree4" />
+          <button id="btn4" onclick="shoot(4)">
+            <img src="img/target.png" alt="Atirar" />
+          </button>
+        </div>
+        <div class="tree">
+          <img src="img/tree.png" alt="Árvore" id="tree5" />
+          <button id="btn5" onclick="shoot(5)">
+            <img src="img/target.png" alt="Atirar" />
+          </button>
+        </div>
+      </section>
+      <section class="info">
+        <div class="bullets">
+          <img src="img/bullet.png" alt="Tiro" />
+          <img src="img/bullet.png" alt="Tiro" />
+          <img src="img/bullet.png" alt="Tiro" />
+        </div>
+        <div class="instructions">
+          <p>
+            Atire na árvore certa e mate o marciano! <br />
+            Você só tem 3 chances, então seja certeiro!
+          </p>
+        </div>
+      </section>
+      <section class="lose" id="lose">
+        <h1>VOCÊ PERDEU!!!</h1>
+        <h2>O marciano escapou!</h2>
+        <button onclick="document.location.reload(true);">Jogar de novo</button>
+      </section>
+      <section class="win" id="win">
+        <h1>VOCÊ VENCEU!!!</h1>
+        <h2>O marciano foi detido!</h2>
+        <button onclick="document.location.reload(true);">Jogar de novo</button>
+      </section>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>
